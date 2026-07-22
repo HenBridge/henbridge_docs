@@ -59,8 +59,9 @@ for funder/auditor consumption.
   governance and dispute-resolution problem, not a technical one. See the
   root README's [Attestation & Trust Model](../README.md#attestation--trust-model)
   notes and the equivalent process to be built in `lafiya-contract`.
-- **Lost patient credentials**: account recovery is a standard web-auth
-  problem; until `lafiya-web` exists this is tracked as an open design
-  question here.
+- **Lost patient credentials**: account recovery mechanism is decided in
+  [ADR 0007](adr/0007-patient-account-recovery.md) (recovery contacts,
+  guardian-assisted recovery for dependents, and governance-mediated
+  recovery as a fallback); implementation is pending `lafiya-web`.
 - **Physical coercion of a patient at the scene**: out of scope for a
   technical threat model; noted for completeness.

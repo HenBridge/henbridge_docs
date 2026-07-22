@@ -30,3 +30,4 @@ instead.
 | [0004](0004-nextjs-supabase-stack.md) | Next.js + Supabase for `lafiya-web` |
 | [0005](0005-usdc-for-chw-incentives.md) | USDC on Stellar for CHW incentives |
 | [0006](0006-verification-key-management.md) | Attester key management |
+| [0007](0007-patient-account-recovery.md) | Patient account-recovery mechanism |
