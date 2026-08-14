@@ -27,7 +27,7 @@ each inventing its own model.
 `relationship_type`, `established_at`, `revoked_at`), not a single foreign
 key — this supports more than one guardian per dependent (e.g. both parents)
 and one guardian across multiple dependents (siblings). A guardian must
-themselves hold an authenticated Lafiya account; guardianship is
+themselves hold an authenticated HenBridge account; guardianship is
 self-asserted at registration (consistent with CHW-driven, low-friction
 registration in the field) rather than gated behind upfront legal-document
 verification, with disputes handled through governance after the fact — the
@@ -75,7 +75,7 @@ it.
 
 - Adds `account_type` and a `guardian_relationship` table to the shared
   data-model contract ([data-model.md](../data-model.md#versioning)),
-  which `lafiya-web`'s schema must reflect in the same or a tracked
+  which `henbridge-web`'s schema must reflect in the same or a tracked
   follow-up change.
 - Requires a scheduled process to detect dependents crossing the
   majority-age-plus-grace-window boundary and revert unreviewed consent

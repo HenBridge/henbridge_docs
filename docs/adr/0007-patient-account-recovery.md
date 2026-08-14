@@ -49,7 +49,7 @@ Layer both mechanisms rather than choosing one:
    designate recovery contacts, distinct from the plain-text
    `emergency_contacts` field in the [data
    model](../data-model.md#full-patient-profile-private-authenticated) (a
-   recovery contact must itself be an authenticated Lafiya account able to
+   recovery contact must itself be an authenticated HenBridge account able to
    approve a request; `emergency_contacts` is unauthenticated free text
    shown to responders and is not fit for this purpose). Recovery requires
    approval from a majority of configured recovery contacts.
@@ -73,7 +73,7 @@ operational process, not invented here in the abstract.
 - Introduces a new `recovery_contacts` relation, distinct from
   `emergency_contacts`, which is a shared-contract change per
   [data-model.md](../data-model.md#versioning) and needs to be reflected in
-  `lafiya-web`'s schema.
+  `henbridge-web`'s schema.
 - Gives the governance committee a second responsibility beyond the
   attester allowlist; committee load and process design should account for
   both when [ADR 0006](0006-verification-key-management.md)'s key-custody

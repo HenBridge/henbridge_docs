@@ -21,4 +21,4 @@ Pay CHWs in USDC on Stellar rather than XLM or a fiat rail.
   card-network or bank-transfer rail would not be.
 - CHWs need a Stellar wallet capable of holding USDC — an onboarding step
   that must be designed for people who may not have prior crypto experience
-  (tracked as an open design question for `lafiya-verifier`).
+  (tracked as an open design question for `henbridge-verifier`).

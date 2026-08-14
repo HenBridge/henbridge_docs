@@ -26,5 +26,5 @@ self-custodied keypair with a recovery process run by governance.
   can't manage a keypair reliably can't attest, which would stall the entire
   trust layer.
 - This ADR is intentionally left "Proposed": the final custody model should
-  be decided alongside `lafiya-contract`'s allowlist implementation, not
+  be decided alongside `henbridge-contract`'s allowlist implementation, not
   before.

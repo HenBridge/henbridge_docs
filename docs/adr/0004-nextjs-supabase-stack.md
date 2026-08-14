@@ -1,4 +1,4 @@
-# ADR 0004: Next.js + Supabase for `lafiya-web`
+# ADR 0004: Next.js + Supabase for `henbridge-web`
 
 ## Status
 
@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-`lafiya-web` needs authenticated patient profiles with fine-grained
+`henbridge-web` needs authenticated patient profiles with fine-grained
 per-field access control, a fast public page for responders, and a small
 team able to ship M0 quickly.
 

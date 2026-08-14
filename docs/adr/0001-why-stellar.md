@@ -6,7 +6,7 @@ Accepted
 
 ## Context
 
-Lafiya needs two things a plain web app cannot provide on its own: a way for
+HenBridge needs two things a plain web app cannot provide on its own: a way for
 a responder who has never met the patient to trust a verification claim, and
 a way to pay CHWs small, frequent amounts without fees eating the payment.
 
@@ -21,7 +21,7 @@ registry, and Stellar-native USDC for CHW payouts.
   without a central authority a responder has to trust blindly.
 - Micropayments to CHWs become economically viable at near-zero fees,
   including cross-border.
-- Lafiya takes on the operational overhead of a testnet/mainnet deployment,
+- HenBridge takes on the operational overhead of a testnet/mainnet deployment,
   key management for the service account, and Soroban-specific tooling.
 - If Stellar were removed, both the trust layer and the incentive engine
   would need to be rebuilt from scratch on different infrastructure — this
