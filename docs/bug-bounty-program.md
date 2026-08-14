@@ -1,8 +1,8 @@
-# Lafiya Bug Bounty Program Specification
+# HenBridge Bug Bounty Program Specification
 
 ## Overview
 
-Lafiya is a **Stellar-based decentralized platform for health data** operating on **testnet** pre-mainnet. This bug bounty program formally defines the scope, reward structure, and disclosure policy for security researchers contributing to the platform's security.
+HenBridge is a **Stellar-based decentralized platform for health data** operating on **testnet** pre-mainnet. This bug bounty program formally defines the scope, reward structure, and disclosure policy for security researchers contributing to the platform's security.
 
 Given the **pre-mainnet, constrained-budget** stage, rewards are structured as **Stellar testnet credits** (convertible to mainnet XLM post-launch) plus **reputation recognition** in the project's governance forum.
 
@@ -14,9 +14,9 @@ Given the **pre-mainnet, constrained-budget** stage, rewards are structured as *
 
 | Repository | Priority | Description |
 |---|---|---|
-| `lafiya-contract` | **Critical** | Stellar smart contracts (DPG - Data Protection Gateway) |
-| `lafiya-web` | **High** | Frontend web application |
-| `lafiya-docs` | **Medium** | Design docs, threat model, privacy design (design-level flaws) |
+| `henbridge-contract` | **Critical** | Stellar smart contracts (DPG - Data Protection Gateway) |
+| `henbridge-web` | **High** | Frontend web application |
+| `henbridge-docs` | **Medium** | Design docs, threat model, privacy design (design-level flaws) |
 
 ### 1.2 In-Scope Vulnerability Types
 
@@ -32,7 +32,7 @@ Given the **pre-mainnet, constrained-budget** stage, rewards are structured as *
 - DoS, brute force, social engineering attacks
 - Issues in third-party dependencies (file separately with the upstream project)
 - Cosmetic UI/UX bugs (create a GitHub Issue instead)
-- Testnet infrastructure issues not related to Lafiya code
+- Testnet infrastructure issues not related to HenBridge code
 
 ---
 
@@ -103,8 +103,8 @@ Rewards are denominated in **Stellar testnet credits (XLM)**. Actual mainnet val
 
 ### 4.1 Reporting Channels
 
-1. **Preferred**: [GitHub Security Advisory](https://github.com/Lafiya-xyz/lafiya-docs/security/advisories/new) — private, tracked, auditable
-2. **Alternative**: Email `security@lafiya.xyz` (PGP key available on project website)
+1. **Preferred**: [GitHub Security Advisory](https://github.com/HenBridge/henbridge_docs/security/advisories/new) — private, tracked, auditable
+2. **Alternative**: Email `security@henbridge.xyz` (PGP key available on project website)
 
 ### 4.2 Report Requirements
 
@@ -139,17 +139,17 @@ Rewards are denominated in **Stellar testnet credits (XLM)**. Actual mainnet val
 
 ### 5.3 Exclusions
 
-- Employees and contractors of the Lafiya team are ineligible
+- Employees and contractors of the HenBridge team are ineligible
 - Researchers who have previously received payment for the same issue are ineligible for duplicate rewards
 
 ---
 
 ## 6. Contact
 
-- **Security reports**: GitHub Security Advisory (preferred) or `security@lafiya.xyz`
-- **Program questions**: `security@lafiya.xyz`
-- **Governance forum**: [Lafiya Forum](https://forum.lafiya.xyz)
-- **PGP key**: Available at `https://lafiya.xyz/security/pgp-key.txt`
+- **Security reports**: GitHub Security Advisory (preferred) or `security@henbridge.xyz`
+- **Program questions**: `security@henbridge.xyz`
+- **Governance forum**: [HenBridge Forum](https://forum.henbridge.xyz)
+- **PGP key**: Available at `https://henbridge.xyz/security/pgp-key.txt`
 
 ---
 

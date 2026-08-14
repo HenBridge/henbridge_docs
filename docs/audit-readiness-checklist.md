@@ -25,15 +25,15 @@ External reviewers and funders can read completion status at a glance.
 | **Tampering** | Edit emergency subset after attestation | ✅ | Any edit invalidates the hash; page shows "unverified" until re-attested — [threat model](../docs/threat-model.md#tampering) |
 | **Repudiation** | Attester denies verifying a record | ✅ | On-chain attestation is public, timestamped, non-repudiable — [threat model](../docs/threat-model.md#repudiation) |
 | **Information disclosure** | Full profile leaks via public page | ✅ | Emergency subset and full profile architecturally separate — [threat model](../docs/threat-model.md#information-disclosure) |
-| **Denial of service** | Flood public page endpoint | ✅ | Standard rate limiting at `lafiya-web` edge; QR pages static/cacheable — [threat model](../docs/threat-model.md#denial-of-service) |
+| **Denial of service** | Flood public page endpoint | ✅ | Standard rate limiting at `henbridge-web` edge; QR pages static/cacheable — [threat model](../docs/threat-model.md#denial-of-service) |
 | **Elevation of privilege** | CHW adds itself to attester allowlist | ✅ | Allowlist changes require governance/committee action — [threat model](../docs/threat-model.md#elevation-of-privilege) |
 
 ## Residual risk
 
 | Residual risk | Status | Owner + target date |
 | --- | --- | --- |
-| Coerced or bribed attester | 🔴 OPEN | Governance/committee — dispute-resolution process to be built in `lafiya-contract` (see [README Attestation & Trust Model](../../README.md#attestation--trust-model)) |
-| Lost patient credentials | 🔴 OPEN | Tracked as open design question until `lafiya-web` exists (standard web-auth account recovery) |
+| Coerced or bribed attester | 🔴 OPEN | Governance/committee — dispute-resolution process to be built in `henbridge-contract` (see [README Attestation & Trust Model](../../README.md#attestation--trust-model)) |
+| Lost patient credentials | 🔴 OPEN | Tracked as open design question until `henbridge-web` exists (standard web-auth account recovery) |
 | Physical coercion of patient at scene | ✅ Out of scope | Noted for completeness — no technical mitigation |
 
 _Last reviewed: post-M0, pre-M1. Re-verify at M1 (attestation live) and

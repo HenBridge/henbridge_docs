@@ -27,7 +27,7 @@ on-chain. See the root README's
 [Attestation & Trust Model](../README.md#attestation--trust-model).
 
 **Is this a medical device?**
-No — see the [Disclaimer](../README.md#disclaimer). Lafiya is an information
+No — see the [Disclaimer](../README.md#disclaimer). HenBridge is an information
 aid; treatment decisions remain the clinician's responsibility.
 
 **Why isn't this just a regular database with logins?**

@@ -1,10 +1,10 @@
 # Bug Bounty Program (post-M1)
 
-This document specifies Lafiya's bug bounty program for the **deployed system**
-(post-M1, once `lafiya-web` and `lafiya-contract` ship code to testnet).
+This document specifies HenBridge's bug bounty program for the **deployed system**
+(post-M1, once `henbridge-web` and `henbridge-contract` ship code to testnet).
 Until then, design-level reports follow [SECURITY.md](../SECURITY.md).
 
-Lafiya is a pre-mainnet health-data Digital Public Good with a **constrained
+HenBridge is a pre-mainnet health-data Digital Public Good with a **constrained
 budget**, so this program is deliberately scoped to what we can actually pay
 out and run — not a max-bounty enterprise program.
 
@@ -12,11 +12,11 @@ out and run — not a max-bounty enterprise program.
 
 ### In scope
 
-- `lafiya-web` (authenticated + public emergency page routes, API layer,
+- `henbridge-web` (authenticated + public emergency page routes, API layer,
   Supabase integration, session/RLS boundaries)
-- `lafiya-contract` (Soroban attestation-registry and attester-registry
+- `henbridge-contract` (Soroban attestation-registry and attester-registry
   crates, on-chain attestation record shape)
-- The `lafiya-docs` **design decisions** that shape security posture:
+- The `henbridge-docs` **design decisions** that shape security posture:
   [data model](../docs/data-model.md), [threat model](../docs/threat-model.md),
   [privacy design](../docs/privacy-design.md) — design-level reports welcome
   (see SECURITY.md).
@@ -69,6 +69,6 @@ PHI) is capped at the Medium tier until mainnet.
 
 - [ ] Program merged into SECURITY.md and linked here
 - [ ] Testnet-phase reward ranges approved by governance/committee
-- [ ] Security Advisory template configured on `lafiya-web` and
-      `lafiya-contract`
+- [ ] Security Advisory template configured on `henbridge-web` and
+      `henbridge-contract`
 - [ ] This document revisited at M4 for mainnet-tier budgets

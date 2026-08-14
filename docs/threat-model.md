@@ -1,4 +1,4 @@
-# Lafiya Threat Model
+# HenBridge Threat Model
 
 ## Assets
 
@@ -26,10 +26,10 @@
 
 ## Trust boundaries
 
-1. **Patient device ↔ `lafiya-web`** — standard web auth boundary (session,
+1. **Patient device ↔ `henbridge-web`** — standard web auth boundary (session,
    Row-Level Security in Supabase)
-2. **`lafiya-web` ↔ Soroban** — service account boundary; only
-   `lafiya-web`'s backend (or a designated relay) can submit attestations,
+2. **`henbridge-web` ↔ Soroban** — service account boundary; only
+   `henbridge-web`'s backend (or a designated relay) can submit attestations,
    using an allowlisted attester identity
 3. **Public emergency page ↔ anyone** — no authentication; this is the point
    of the page, so it's the boundary that matters most
@@ -42,7 +42,7 @@
 | **Tampering** | Attacker edits the emergency subset after attestation | Any edit invalidates the hash; the public page shows "unverified" until re-attested |
 | **Repudiation** | Attester denies having verified a record | On-chain attestation is a public, timestamped, non-repudiable record |
 | **Information disclosure** | Full patient profile leaks via the public page | Emergency subset and full profile are architecturally separate; the public page code path never has access to full-profile fields |
-| **Denial of service** | Attacker floods the public page endpoint | Standard rate limiting at `lafiya-web`'s edge; QR pages are static/cacheable by design |
+| **Denial of service** | Attacker floods the public page endpoint | Standard rate limiting at `henbridge-web`'s edge; QR pages are static/cacheable by design |
 | **Elevation of privilege** | CHW account is used to add itself to the attester allowlist | Allowlist changes require governance/committee action, not CHW-level credentials |
 
 ## Audit-readiness
@@ -58,10 +58,10 @@ for funder/auditor consumption.
   to attest to false data is not detected by the cryptography — this is a
   governance and dispute-resolution problem, not a technical one. See the
   root README's [Attestation & Trust Model](../README.md#attestation--trust-model)
-  notes and the equivalent process to be built in `lafiya-contract`.
+  notes and the equivalent process to be built in `henbridge-contract`.
 - **Lost patient credentials**: account recovery mechanism is decided in
   [ADR 0007](adr/0007-patient-account-recovery.md) (recovery contacts,
   guardian-assisted recovery for dependents, and governance-mediated
-  recovery as a fallback); implementation is pending `lafiya-web`.
+  recovery as a fallback); implementation is pending `henbridge-web`.
 - **Physical coercion of a patient at the scene**: out of scope for a
   technical threat model; noted for completeness.

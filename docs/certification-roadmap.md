@@ -1,9 +1,9 @@
 # Security Certification & Compliance Roadmap
 
-Assesses which formal certifications are applicable to Lafiya at its current
+Assesses which formal certifications are applicable to HenBridge at its current
 pre-alpha/pilot stage, and drafts a **staged** path toward them — pursuing
 each only when actually warranted by scale, funder requirement, or regulatory
-exposure. Lafiya is a health-data Digital Public Good, so this is revisited
+exposure. HenBridge is a health-data Digital Public Good, so this is revisited
 before formal DPG registration (see
 [funding-and-dpg.md](funding-and-dpg.md)).
 
@@ -25,7 +25,7 @@ before formal DPG registration (see
 - **What:** international ISMS standard; certifiable.
 - **Applicability now:** **Not yet warranted.** Heavy documentation and
   annual surveillance overhead disproportionate to a 3-repo pilot.
-- **When it becomes relevant:** if Lafiya scales to multiple deployment
+- **When it becomes relevant:** if HenBridge scales to multiple deployment
   regions or joins a health-system procurement framework that mandates it.
 
 ### DPG Standard (already tracked)
@@ -42,7 +42,7 @@ before formal DPG registration (see
 - **Applicability now:** NDPA 2023 mapping is **in progress** (see
   [privacy-design.md](../docs/privacy-design.md)); full HIPAA is out of scope
   until a US deployment exists.
-- **When it becomes relevant:** if Lafiya serves US-resident data.
+- **When it becomes relevant:** if HenBridge serves US-resident data.
 
 ## Staged roadmap
 

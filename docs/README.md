@@ -1,6 +1,6 @@
-# Lafiya Docs Index
+# HenBridge Docs Index
 
-This directory is the single source of truth for Lafiya's design. Start here.
+This directory is the single source of truth for HenBridge's design. Start here.
 
 | Doc | What it covers |
 | --- | --- |
@@ -12,12 +12,12 @@ This directory is the single source of truth for Lafiya's design. Start here.
 | [analytics-spec.md](analytics-spec.md) | Scan-event schema, privacy boundaries, and retention rules |
 | [funding-and-dpg.md](funding-and-dpg.md) | SCF application notes and Digital Public Goods Standard checklist |
 | [roadmap.md](roadmap.md) | Milestone-by-milestone detail behind the README roadmap |
-| [personas.md](personas.md) | The people Lafiya is designed around |
+| [personas.md](personas.md) | The people HenBridge is designed around |
 | [faq.md](faq.md) | Common questions from patients, CHWs, responders, and funders |
-| [api-surface-sketch.md](api-surface-sketch.md) | Forward-looking sketch of the `lafiya-web` API and Soroban contract interface |
+| [api-surface-sketch.md](api-surface-sketch.md) | Forward-looking sketch of the `henbridge-web` API and Soroban contract interface |
 | [testing-strategy.md](testing-strategy.md) | How the eventual app and contracts should be tested |
 | [style-guide.md](style-guide.md) | Writing conventions for contributing to these docs |
 | [adr/](adr/README.md) | Architecture Decision Records — the *why* behind key choices |
-| [glossary.md](glossary.md) | Terms used across all Lafiya docs |
+| [glossary.md](glossary.md) | Terms used across all HenBridge docs |
 
-> This repo (`lafiya-docs`) is documentation only. See the [root README](../README.md) for the project overview and the multi-repo organization layout.
+> This repo (`henbridge-docs`) is documentation only. See the [root README](../README.md) for the project overview and the multi-repo organization layout.

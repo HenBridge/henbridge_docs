@@ -12,22 +12,22 @@ or contract code exists. Status: **done**, entirely within this repo.
 
 - [x] Concept note, data model, threat model, and privacy design specified
 - [x] Architecture Decision Records for the Stellar/Soroban trust model, the
-      `lafiya-web` stack, and CHW incentives (see [adr/](adr/README.md))
+      `henbridge-web` stack, and CHW incentives (see [adr/](adr/README.md))
 - [x] Contributor infrastructure: `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`,
       `SECURITY.md`, `LICENSE` (MIT), issue/PR templates, and
       markdown-lint CI
-- [x] `lafiya-web` and `lafiya-contract` repos scaffolded and under active
+- [x] `henbridge-web` and `henbridge-contract` repos scaffolded and under active
       development
 
 ## M0 — Public card (testnet)
 
 **Goal:** one patient can create a profile and expose a working read-only
-emergency page via QR. **Status: in progress** — `lafiya-web` has
+emergency page via QR. **Status: in progress** — `henbridge-web` has
 authenticated and public route groups, an API layer, and a Supabase
-integration; `lafiya-contract` has separate attestation-registry and
+integration; `henbridge-contract` has separate attestation-registry and
 attester-registry crates. Not yet verified end-to-end.
 
-- Patient signup/login (`lafiya-web`)
+- Patient signup/login (`henbridge-web`)
 - Profile editor covering the full [data model](data-model.md)
 - Public emergency page rendering the emergency subset only
 - QR generation pointing at the public page
@@ -38,9 +38,9 @@ attester-registry crates. Not yet verified end-to-end.
 **Goal:** an allowlisted attester can verify a record; the card shows a
 verified indicator.
 
-- Soroban attestation registry contract (`lafiya-contract`), Testnet
+- Soroban attestation registry contract (`henbridge-contract`), Testnet
 - Attester allowlist (governance-managed)
-- `lafiya-web` submits the record hash on attestation and checks it on page
+- `henbridge-web` submits the record hash on attestation and checks it on page
   load
 
 ## M2 — Incentives
@@ -49,7 +49,7 @@ verified indicator.
 
 - USDC-on-Stellar payout flow tied to a completed attestation
 - CHW-facing view of registrations and payouts (may live in
-  `lafiya-verifier`)
+  `henbridge-verifier`)
 
 ## M3 — Pilot
 
@@ -63,7 +63,7 @@ verified indicator.
 
 **Goal:** launch on mainnet; open a transparent funding pool.
 
-- Mainnet deployment of `lafiya-contract`
+- Mainnet deployment of `henbridge-contract`
 - Public, on-chain-traceable funding pool for CHW incentives
 - DPG Standard registration (see [funding-and-dpg.md](funding-and-dpg.md))
 

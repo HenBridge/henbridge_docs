@@ -29,6 +29,6 @@ with zero setup — no login, no app install, just a scan.
 ## The Funder
 
 A grant program (e.g. Stellar Community Fund) or DPG-aligned funder
-evaluating whether Lafiya is real infrastructure or a demo. Primary need:
+evaluating whether HenBridge is real infrastructure or a demo. Primary need:
 evidence that Stellar is load-bearing (not decorative) and that funds map to
 measurable, on-chain-traceable outcomes.

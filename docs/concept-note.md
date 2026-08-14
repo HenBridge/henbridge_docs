@@ -1,4 +1,4 @@
-# Lafiya Concept Note
+# HenBridge Concept Note
 
 ## Problem statement
 
@@ -22,12 +22,12 @@ Three structural gaps compound this:
 
 ## Solution overview
 
-Lafiya is a two-layer system:
+HenBridge is a two-layer system:
 
-- **Lafiya Card** is the patient-facing product: a free, patient-owned
+- **HenBridge Card** is the patient-facing product: a free, patient-owned
   profile behind a login, exposing a minimal, read-only public emergency page
   reachable by scanning a QR code.
-- **Lafiya Proof** is the Stellar-native trust and payment layer underneath
+- **HenBridge Proof** is the Stellar-native trust and payment layer underneath
   it: Soroban attestations that let a verified health worker cryptographically
   vouch for a record without ever putting the health data itself on-chain,
   and USDC micropayments that make CHW-driven registration economically
@@ -49,7 +49,7 @@ harmed by wrong assumptions about blood group, genotype, or allergy status.
 This only works if all three legs hold. A card nobody trusts is theater. A
 trust mechanism nobody uses because no one registers patients is unused
 infrastructure. An incentive with no verification behind it is just a
-subsidy. Lafiya Card, the Soroban attestation registry, and the CHW incentive
+subsidy. HenBridge Card, the Soroban attestation registry, and the CHW incentive
 rail are designed as one system for this reason — see
 [Why Stellar](adr/0001-why-stellar.md) for why none of the three legs can be
 cut without the others collapsing.
@@ -65,9 +65,9 @@ Tracked from M0 onward (see [roadmap.md](roadmap.md)):
 
 ## Non-goals
 
-- Lafiya is not a medical device and does not make treatment recommendations
+- HenBridge is not a medical device and does not make treatment recommendations
   — see the [root README's Disclaimer](../README.md#disclaimer).
-- Lafiya does not store full clinical history on the public page — see
+- HenBridge does not store full clinical history on the public page — see
   [data-model.md](data-model.md) for exactly what is and isn't exposed.
-- Lafiya does not put any personal health data on-chain, ever — see
+- HenBridge does not put any personal health data on-chain, ever — see
   [privacy-design.md](privacy-design.md).

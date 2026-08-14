@@ -1,7 +1,7 @@
-# Lafiya Data Model
+# HenBridge Data Model
 
-This is the source of truth for every field Lafiya stores, where it lives,
-and who can see it. `lafiya-web`'s database schema and `lafiya-contract`'s
+This is the source of truth for every field HenBridge stores, where it lives,
+and who can see it. `henbridge-web`'s database schema and `henbridge-contract`'s
 on-chain structs must match this document — see the root README's
 [Shared Contracts](../README.md#shared-contracts-must-stay-in-sync-across-repos)
 section.
@@ -57,6 +57,6 @@ hash is ever published.
 ## Versioning
 
 Any change to a field name, type, or enum value in this document is a
-**shared-contract change**: it must be reflected in `lafiya-web`'s schema
-and, if it touches the attestation record, in `lafiya-contract`'s Rust
+**shared-contract change**: it must be reflected in `henbridge-web`'s schema
+and, if it touches the attestation record, in `henbridge-contract`'s Rust
 struct, in the same change set or a tracked follow-up in each repo.

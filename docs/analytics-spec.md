@@ -1,10 +1,10 @@
 # Analytics Specification
 
-Lafiya tracks page scans on the public emergency page to measure system reach and utility in the field. To balance the need for analytics with patient privacy, this document specifies the scan-event schema, data minimization guidelines, and retention rules.
+HenBridge tracks page scans on the public emergency page to measure system reach and utility in the field. To balance the need for analytics with patient privacy, this document specifies the scan-event schema, data minimization guidelines, and retention rules.
 
 ## Scan-Event Schema
 
-When a user scans a Lafiya Card QR code and requests the public emergency page, the server logs a single analytics event. The schema contains the following fields:
+When a user scans a HenBridge Card QR code and requests the public emergency page, the server logs a single analytics event. The schema contains the following fields:
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -18,7 +18,7 @@ When a user scans a Lafiya Card QR code and requests the public emergency page, 
 
 ## Privacy Boundaries & Non-Logged Fields
 
-To comply with the Nigeria Data Protection Act (NDPA) 2023 and Lafiya's central privacy guarantees, the system explicitly drops and does not log the following data:
+To comply with the Nigeria Data Protection Act (NDPA) 2023 and HenBridge's central privacy guarantees, the system explicitly drops and does not log the following data:
 
 - **No Patient Health Data (PHI) / Profile Data**: The system never logs the content of the emergency subset (defined in [data-model.md](data-model.md#emergency-subset-public-qr-reachable)) or the full patient profile. This includes name, age, blood group, genotype, allergies, medications, conditions, emergency contacts, and language.
 - **No Plaintext Identifiers**: The system never logs raw `patient_id` values, email addresses, phone numbers, or the raw `record_hash`.

@@ -1,4 +1,4 @@
-# Lafiya Privacy Design
+# HenBridge Privacy Design
 
 ## Data minimization & consent
 
@@ -12,10 +12,10 @@ reversible.
 
 ## NDPA 2023 compliance mapping
 
-The Nigeria Data Protection Act (2023) governs all personal data Lafiya
+The Nigeria Data Protection Act (2023) governs all personal data HenBridge
 holds. Key obligations and how the design meets them:
 
-| NDPA principle | Lafiya's design response |
+| NDPA principle | HenBridge's design response |
 | --- | --- |
 | Lawful basis / consent | Explicit, granular, per-field opt-in for the public page; withdrawable at any time |
 | Purpose limitation | Emergency subset exists solely for emergency treatment context; no secondary use (marketing, resale) |
@@ -26,7 +26,7 @@ holds. Key obligations and how the design meets them:
 
 ## On-chain / off-chain boundary
 
-This is Lafiya's central privacy guarantee: **no personal health data ever
+This is HenBridge's central privacy guarantee: **no personal health data ever
 touches the blockchain.** The chain holds exactly three things — a hash, an
 attester identity, and a timestamp (see
 [data-model.md](data-model.md#attestation-record-on-chain-soroban)). This is
@@ -34,7 +34,7 @@ a one-way design choice, not a configuration flag: a hash cannot be reversed
 to recover the underlying record, and the off-chain database is the only
 place the emergency subset or full profile is ever stored in readable form.
 
-This boundary is why Stellar is a *core* component of Lafiya rather than an
+This boundary is why Stellar is a *core* component of HenBridge rather than an
 add-on — see [ADR 0001](adr/0001-why-stellar.md) and
 [ADR 0002](adr/0002-off-chain-data-on-chain-attestation.md).
 
@@ -42,7 +42,7 @@ add-on — see [ADR 0001](adr/0001-why-stellar.md) and
 
 Patients can, at minimum:
 
-- View everything Lafiya holds about them
+- View everything HenBridge holds about them
 - Correct inaccurate fields
 - Toggle what's public
 - Request deletion (subject to the retention rules in

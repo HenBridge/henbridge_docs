@@ -28,5 +28,5 @@ blockchain, **not deletable**. This is a known and accepted tradeoff:
 
 Off-chain backups follow the same retention ceiling as live data; a deletion
 request is not complete until it has propagated to backups within the
-documented backup retention window (to be finalized alongside `lafiya-web`'s
+documented backup retention window (to be finalized alongside `henbridge-web`'s
 infrastructure choices).
