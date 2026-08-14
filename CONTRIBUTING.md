@@ -1,9 +1,9 @@
-# Contributing to Lafiya
+# Contributing to HenBridge
 
-Thanks for your interest in Lafiya — an open-source Digital Public Good. This
-repository (`lafiya-docs`) is documentation only: the concept note, data
+Thanks for your interest in HenBridge — an open-source Digital Public Good. This
+repository (`henbridge-docs`) is documentation only: the concept note, data
 model, threat model, privacy design, and funding materials the rest of the
-`lafiya-xyz` organization is built against. See the [root README](README.md#lafiya-organization)
+`henbridge` organization is built against. See the [root README](README.md#henbridge-organization)
 for where application and contract code live.
 
 ## Before you open a PR
@@ -11,7 +11,7 @@ for where application and contract code live.
 For anything beyond a typo or broken link, please open an issue first using
 the **Proposal** template. This is especially important for changes to the
 [data model](docs/data-model.md) or [attestation record schema](docs/data-model.md#attestation-record-on-chain-soroban) —
-these are shared contracts with `lafiya-web` and `lafiya-contract`, and
+these are shared contracts with `henbridge-web` and `henbridge-contract`, and
 changing them here without warning breaks other repos silently.
 
 ## Making the change
@@ -46,7 +46,7 @@ By participating, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md
 Applies to all changes, with stricter rules for security-sensitive ones.
 
 - **Mandatory code review for security-sensitive changes:** any PR touching
-  auth, data access (RLS / row policies), or contract logic (`lafiya-contract`)
+  auth, data access (RLS / row policies), or contract logic (`henbridge-contract`)
   requires review by a maintainer familiar with the
   [threat model](docs/threat-model.md) before merge. Self-merge is not
   permitted for these paths.

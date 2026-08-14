@@ -44,7 +44,7 @@ or harmful.
 
 ## Scope
 
-This Code of Conduct applies within all Lafiya community spaces (issues, pull
+This Code of Conduct applies within all HenBridge community spaces (issues, pull
 requests, discussions) and applies when an individual is officially
 representing the community in public spaces.
 
@@ -52,7 +52,7 @@ representing the community in public spaces.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by opening a confidential GitHub Security Advisory on this repository,
-or by contacting a `lafiya-xyz` organization owner directly. All complaints
+or by contacting a `henbridge` organization owner directly. All complaints
 will be reviewed and investigated promptly and fairly.
 
 ## Attribution
