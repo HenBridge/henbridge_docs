@@ -1,6 +1,6 @@
 ---
 name: Documentation issue
-about: Report an error, gap, or ambiguity in Lafiya's docs
+about: Report an error, gap, or ambiguity in HenBridge's docs
 title: "[Docs] "
 labels: documentation
 ---

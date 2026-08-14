@@ -10,13 +10,13 @@
 ## Shared-contract impact
 
 - [ ] This PR changes the emergency data model, attestation schema, or another
-      contract shared with `lafiya-web` / `lafiya-contracts` — the matching
+      contract shared with `henbridge-web` / `henbridge-contracts` — the matching
       issue in the affected repo is linked below.
 
 ### Shared-contract review checklist
 
 _Complete this if the box above is checked. Changes to shared contracts can
-silently break `lafiya-web` or `lafiya-contract` — this enforces the
+silently break `henbridge-web` or `henbridge-contract` — this enforces the
 "Shared Contracts" rule from the README and CONTRIBUTING.md._
 
 - [ ] I confirmed whether this PR touches any **Shared Contracts** section item
@@ -25,7 +25,7 @@ silently break `lafiya-web` or `lafiya-contract` — this enforces the
       [data model](docs/data-model.md) and the
       [README Shared Contracts section](../../README.md#shared-contracts-must-stay-in-sync-across-repos).
 - [ ] If a **data-model or attestation-schema** field changed: the matching
-      update to `lafiya-web`'s schema and/or `lafiya-contract`'s Rust struct is
+      update to `henbridge-web`'s schema and/or `henbridge-contract`'s Rust struct is
       in this change set **or** a tracked follow-up issue is linked below.
 - [ ] If an **API surface** field changed: the backend data-contract update in
       the affected repo is linked (cross-repo follow-up issue required).
